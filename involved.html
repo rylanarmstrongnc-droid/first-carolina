@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Involved | First Carolina</title>
+  <meta name="description" content="Apply to debate, get amplified, or join the First Carolina movement.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo.jpg" alt="First Carolina logo">
+        <span class="logo-text">First Carolina</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="involved.html" class="active">Get Involved</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="debates.html" class="debates-link">Debates</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-dark" style="padding-top: 4rem;">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get Involved</h2>
+          <p>Three clear paths. Tell us which one is yours.</p>
+        </div>
+
+        <div class="cards" style="margin-bottom: 3.5rem;">
+          <div class="card">
+            <div class="card-number">01</div>
+            <h3>Put Me Up for Debate</h3>
+            <p>Ready to test your ideas in formal intra-party debate. Bring your strongest arguments.</p>
+          </div>
+          <div class="card">
+            <div class="card-number">02</div>
+            <h3>Amplify My Content</h3>
+            <p>Have a post, video, or idea worth spreading? Submit the link and we’ll consider it for the network.</p>
+          </div>
+          <div class="card">
+            <div class="card-number">03</div>
+            <h3>Join the Movement</h3>
+            <p>Want to be part of First Carolina? Apply to connect with serious young conservatives across North Carolina.</p>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <h3 style="text-align:center; margin-bottom:1.8rem; color:var(--white);">Application Form</h3>
+          
+          <form id="involve-form" action="https://formspree.io/f/xrbledvy" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+
+            <div class="form-group">
+              <label for="contact">Phone or Email *</label>
+              <input type="text" id="contact" name="contact" required placeholder="Best way to reach you">
+            </div>
+
+            <div class="form-group">
+              <label for="path">I’m applying to *</label>
+              <select id="path" name="path" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="debate">Be put up for debate</option>
+                <option value="amplify">Get my content reposted / shared</option>
+                <option value="join">Join the First Carolina movement</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="details">Details / Link (if amplifying)</label>
+              <textarea id="details" name="details" placeholder="For amplify requests: paste the post/channel link and a short note. For debate or join: tell us a bit about yourself."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">Submit Application</button>
+            
+            <p class="form-note">
+              Prefer text? Message <strong>432-312-1184</strong> (texts preferred over calls).
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="assets/logo.jpg" alt="First Carolina">
+        <span>First Carolina</span>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="involved.html">Get Involved</a>
+        <a href="contact.html">Contact</a>
+        <a href="debates.html">Debates</a>
+        <a href="https://www.instagram.com/rylanarmstrongnc/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 First Carolina · North Carolina · We Are the Exception.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
